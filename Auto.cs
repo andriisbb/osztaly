@@ -22,7 +22,7 @@ namespace osztaly
                 else gyartasiEv = 0;
             }
         }
-        public Auto(int ev, string modell, string marka)
+        public Auto(int GyartasiEv, string modell, string marka)
         {
             this.GyartasiEv = GyartasiEv;
             Modell = modell;
@@ -30,7 +30,7 @@ namespace osztaly
         }
         public void KiirAdatok()
         {
-            Console.WriteLine($"{Marka} {Modell} - Gyártási év:{GyartasiEv}");
+            Console.WriteLine($"{Marka} {Modell} - Gyártási év: {GyartasiEv}");
         }
 
     }
