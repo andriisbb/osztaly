@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
+using System.Text;
+
+namespace osztaly
+{
+    internal class Auto
+    {
+        private int gyartasiEv;
+        public string Modell { get; set; }
+        public string Marka { get; set; }
+        public int GyartasiEv
+        {
+            get { return gyartasiEv; }
+            set
+            {
+                if (value > 1886 && value <= 2026)
+                {
+                    gyartasiEv = value;
+                }
+                else gyartasiEv = 0;
+            }
+        }
+        public Auto(int ev, string modell, string marka)
+        {
+            this.GyartasiEv = GyartasiEv;
+            Modell = modell;
+            Marka = marka;
+        }
+
+    }
+}
