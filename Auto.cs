@@ -28,6 +28,10 @@ namespace osztaly
             Modell = modell;
             Marka = marka;
         }
+        public void KiirAdatok()
+        {
+            Console.WriteLine($"{Marka} {Modell} - Gyártási év:{GyartasiEv}");
+        }
 
     }
 }
